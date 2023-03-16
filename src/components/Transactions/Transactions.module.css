@@ -1,0 +1,21 @@
+.transactionsBox {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  padding: 15px;
+  background-color: #14d085;
+}
+
+.transactionHistory {
+  border-collapse: separate;
+}
+
+.tableBox {
+  width: 150px;
+  background-color: tomato;
+}
+
+.tbodyBox {
+  width: 150px;
+  background-color: tomato;
+}
