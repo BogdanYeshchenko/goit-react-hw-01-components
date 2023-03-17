@@ -18,7 +18,11 @@ export const App = () => {
         stats={user.stats}
         tag={user.tag}
       />
+
+      <Statistics title="Upload stats" stats={data} />
+
       <Statistics stats={data} />
+
       <FriendsBord friends={friends} />
       <Transactions items={transactions} />
     </div>

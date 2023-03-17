@@ -1,4 +1,5 @@
 import css from './Transactions.module.css';
+import PropTypes from 'prop-types';
 
 export default function MakeTransactionsList({ type, amount, currency }) {
   return (
@@ -9,3 +10,9 @@ export default function MakeTransactionsList({ type, amount, currency }) {
     </tr>
   );
 }
+
+MakeTransactionsList.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};

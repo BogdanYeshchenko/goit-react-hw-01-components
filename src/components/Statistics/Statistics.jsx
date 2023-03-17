@@ -1,12 +1,14 @@
 import MakeMarkupForStatisticsItems from './MakeMarkup';
+import Title from './Title';
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-export default function Statistics({ stats }) {
+export default function Statistics({ stats, title }) {
   return (
     <section className="statistics">
       <div className={css.statisticsBox}>
-        <h2 className={css.title}>Upload stats</h2>
+        {/* {title ? <Title title={title} /> : null} */}
+        {title && <Title title={title} />}
 
         <ul className={css.statList}>
           {stats.map(el => (
@@ -23,6 +25,7 @@ export default function Statistics({ stats }) {
 }
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
