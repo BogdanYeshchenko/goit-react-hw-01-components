@@ -29,17 +29,17 @@
 }
 
 .red {
-  width: 16px;
+  /* width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: 50%; */
 
   background-color: red;
 }
 
 .green {
-  width: 16px;
+  /* width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: 50%; */
 
   background-color: rgb(63, 246, 7);
 }
